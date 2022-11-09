@@ -8,8 +8,8 @@
         protected function Conexion(){
             //bloque try catch para la conexion
             try{
-                $conectar = $this->dbh = new PDO("mysqli:local=localhost;dbname=ayf_helpdesk","root","");
-                return $conectar;
+                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=ayf_helpdesk","root","");
+                return $conectar;   
             }catch(Exception $e){
                 print "¡Error en la base de datos".$e->getMessage()."</br>";
                 die();  
@@ -20,7 +20,7 @@
         }
 
         public function ruta(){
-            return "http://localhost:8S9/personal_helpdesk/";
+            return "http://localhost:80/personal_helpdesk/";
         }
     }
     
