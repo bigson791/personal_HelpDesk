@@ -20,8 +20,9 @@
         }
 
         public function ruta(){
-            return "http://localhost:80/personal_helpdesk/";
+            return "http://localhost:8S9/personal_helpdesk/";
         }
     }
+    
 
 ?>
