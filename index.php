@@ -33,8 +33,33 @@
                 <form class="sign-box" action="" method="POST" id="login_form">
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="">
-                    </div>
+                     </div>
                     <header class="sign-title">Acceso</header>
+                    <?php 
+                        if(isset($_GET["m"])){
+                            switch($_GET["m"]){
+                                case "1";
+                                    ?>
+                                    <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+							        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+							El Usuario y/o contraseña son incorectos</div>
+                        <?php
+                        break;
+
+                        case "2";
+                        ?>
+                        <div class="alert alert-danger alert-no-border alert-close alert-dismissible fade show" role="alert">
+							        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+							Los Campos estan Vacíos 
+						</div>
+                        <?php
+                            }
+                        }
+                    ?>
                     <div class="form-group" >
                         <input type="text" class="form-control" id="usu_correo" name="usu_correo" placeholder="E-Mail"/>
                     </div>
