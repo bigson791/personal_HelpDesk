@@ -40,7 +40,7 @@
 					<div class="col-lg-6">
 						<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInput">Categoria</label>
-							<select id="exampleSelect" class="form-control">
+							<select id="cat_id" class="form-control">
 								<option>Hardware</option>
 								<option>Software</option>
 								<option>Otros</option>
