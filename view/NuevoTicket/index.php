@@ -57,7 +57,7 @@
 						<fieldset class="form-group">
 							<label class="form-label semibold" for="exampleInputPassword1">Descripcion</label>
 							<div class="summernote-theme-1">
-								<textarea class="summernote" name="name"  id="ticket-descript">Hello Summernote</textarea>
+								<textarea class="summernote" name="name"  id="ticket-descript"></textarea>
 							</div>
 						</fieldset>
 					</div>
