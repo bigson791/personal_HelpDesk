@@ -1,5 +1,4 @@
 <?php 
-
     class Categoria extends Conectar
     {
         public function get_categoria(){
