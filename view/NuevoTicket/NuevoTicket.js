@@ -18,8 +18,9 @@ $(document).ready(function() {
 
 function guardaryeditar(e){
     e.preventDefault();
-    var formData = new formData($("#ticket_form")[0]);
-
+    var formData = new FormData($("#ticket_form")[0]);
+    //formData.append("datos[]",$("#ticket_form")[0])
+    alert(formData);
     $.ajax({
         url: "../../controller/ticket.php?op=insert",
         type: "post",
